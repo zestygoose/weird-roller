@@ -70,7 +70,7 @@ const Ability = (props) => {
                                 {str}
                             </div>
                             <div className=''>
-                                {ability_modifiers.find(x => x.stat == str)?.modtxt}
+                                {ability_modifiers.find(x => x.stat === str)?.modtxt}
                             </div>
                         </td>
                     </tr>
@@ -86,7 +86,7 @@ const Ability = (props) => {
                                 {agi}
                             </div>
                             <div>
-                                {ability_modifiers.find(x => x.stat == agi)?.modtxt}
+                                {ability_modifiers.find(x => x.stat === agi)?.modtxt}
                             </div>
                         </td>
                     </tr>
@@ -102,7 +102,7 @@ const Ability = (props) => {
                                 {sta}
                             </div>
                             <div>
-                                {ability_modifiers.find(x => x.stat == sta)?.modtxt}
+                                {ability_modifiers.find(x => x.stat === sta)?.modtxt}
                             </div>
                         </td>
                     </tr>
@@ -118,7 +118,7 @@ const Ability = (props) => {
                                 {per}
                             </div>
                             <div>
-                                {ability_modifiers.find(x => x.stat == per)?.modtxt}
+                                {ability_modifiers.find(x => x.stat === per)?.modtxt}
                             </div>
                         </td>
                     </tr>
@@ -134,7 +134,7 @@ const Ability = (props) => {
                                 {int}
                             </div>
                             <div>
-                                {ability_modifiers.find(x => x.stat == int)?.modtxt}
+                                {ability_modifiers.find(x => x.stat === int)?.modtxt}
                             </div>
                         </td>
                     </tr>
@@ -150,7 +150,7 @@ const Ability = (props) => {
                                 {luk}
                             </div>
                             <div>
-                                {ability_modifiers.find(x => x.stat == luk)?.modtxt}
+                                {ability_modifiers.find(x => x.stat === luk)?.modtxt}
                             </div>
                         </td>
                     </tr>

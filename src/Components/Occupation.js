@@ -11,7 +11,7 @@ const Occupation = (props) => {
         if (triggerRoll) {
             var roll = Math.floor(Math.random() * 100 + 1);
             setOccRoll(roll);
-            setOccupation(occupations.find(o => o.roll == roll));
+            setOccupation(occupations.find(o => o.roll === roll));
         }
     },[triggerRoll])
 

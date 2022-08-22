@@ -16,9 +16,9 @@ const OtherStats = (props) => {
             setGrit(Math.floor((stamina + personality) / 2))
 
             var roll = Math.floor(Math.random() * 4 + 1);
-            var ability = ability_modifiers.find(m => m.stat == stamina);
+            var ability = ability_modifiers.find(m => m.stat === stamina);
 
-            setHitResult(ability.mod != 0 ? `${roll} ${ability.modtxt}` : roll);
+            setHitResult(ability.mod !== 0 ? `${roll} ${ability.modtxt}` : roll);
 
             var totalHit = roll + ability.mod;
             setHit(totalHit);
@@ -30,7 +30,7 @@ const OtherStats = (props) => {
 
     return (
         <div className='bg-slate-600 text-white rounded-xl m-2 w-full md:w-1/5'>
-            <h1 className='p-2 text-center'>Other stats</h1>
+            <h1 className='p-2 text-center'>Other Stats</h1>
             <table>
                 <thead></thead>
                 <tbody>

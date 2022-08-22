@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import Ability from './Ability'
 import Luck from './Luck';
 import Occupation from './Occupation';

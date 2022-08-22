@@ -1,5 +1,3 @@
-export { ability_modifiers, lucky_signs, occupations }
-
 var ability_modifiers = [
     { stat: 3, mod: -3, modtxt: '(-3)' },
     { stat: 4, mod: -2, modtxt: '(-2)' },
@@ -162,3 +160,5 @@ var occupations = [
     { roll: 99, occupation: 'Potter', weapon: 'Chisel (d2)', goods: `Lump of clay ($.50)`},
     { roll: 100, occupation: 'Bum', weapon: 'Knife (d4)', goods: `Jug of white lightning ($1)`},
 ]
+
+export { ability_modifiers, lucky_signs, occupations }

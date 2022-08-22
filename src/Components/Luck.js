@@ -9,22 +9,22 @@ const Luck = (props) => {
 
     useEffect(() => {
         // If lucky enough to have a sign at all
-        if (luck && ability_modifiers.find(x => x.stat == luck).mod > 0) {
+        if (luck && ability_modifiers.find(x => x.stat === luck).mod > 0) {
             var roll = Math.floor(Math.random() * 30 + 1);
-            var abilityMod = ability_modifiers.find(a => a.stat == luck);
+            var abilityMod = ability_modifiers.find(a => a.stat === luck);
 
-            setSignRoll(abilityMod.mod !=0 ? `${roll} ${abilityMod.modtxt}` : roll);
+            setSignRoll(abilityMod.mod !==0 ? `${roll} ${abilityMod.modtxt}` : roll);
             var rollResult = roll + abilityMod.mod;
 
             if (rollResult < 1) { rollResult = 1}
             if (rollResult > 30) { rollResult = 30}
 
-            setSign(lucky_signs.find(s => s.roll == rollResult));
+            setSign(lucky_signs.find(s => s.roll === rollResult));
         } 
         // Not lucky enough for a sign
         else if (luck) {
             setSignRoll(null)
-            setSign(lucky_signs.find(s => s.roll == 0));
+            setSign(lucky_signs.find(s => s.roll === 0));
         }
     }, [luck])
 
