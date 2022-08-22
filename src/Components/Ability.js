@@ -33,7 +33,7 @@ const Ability = (props) => {
             var t_per = rollDice(3, setPerRolls);
             setPer(t_per, getPer(t_per))
         }
-    }, [triggerRoll])
+    }, [triggerRoll, getSta, getPer, getLuk])
 
     const rollDice = (d, setRolls) => {
         var sum = 0;
