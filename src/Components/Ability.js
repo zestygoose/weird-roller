@@ -33,7 +33,9 @@ const Ability = (props) => {
             var t_per = rollDice(3, setPerRolls);
             setPer(t_per, getPer(t_per))
         }
-    }, [triggerRoll, getSta, getPer, getLuk])
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [triggerRoll])
 
     const rollDice = (d, setRolls) => {
         var sum = 0;
